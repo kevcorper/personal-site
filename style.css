@@ -8,7 +8,7 @@ body {
 	color: gray;
 }
 
-#projects, #about, #skills {
+#projects, #skills, #contact {
 	display: none;
 }
 
@@ -22,6 +22,7 @@ h1 {
 	margin: 0;
 	display: inline-block;
 	margin-left: 10px;
+	width: 100%;
 }
 
 .cap-letter {
@@ -56,6 +57,10 @@ a {
 }
 
 a:hover {
+	font-size: 1.75em;
+}
+
+.showing {
 	font-size: 1.75em;
 }
 
@@ -127,7 +132,13 @@ i {
 
 
 footer {
-	height: 25px;
+	height: 30px;
 	background-color: #F7CA18;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
 }
 
