@@ -8,7 +8,7 @@ body {
 	color: gray;
 }
 
-#skills, #contact, #about {
+#projects, #about, #skills {
 	display: none;
 }
 
@@ -49,27 +49,47 @@ navbar ul li:not(:last-child) {
 	border-bottom: 1px solid #F7CA18;
 }
 
-navbar ul li a {
+a {
 	color: gray;
 	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease; -moz-transition: font-size 0.3s ease, background-color 0.3s ease; -o-transition: font-size 0.3s ease, background-color 0.3s ease; -ms-transition: font-size 0.3s ease, background-color 0.3s ease; transition: font-size 0.3s ease, background-color 0.3s ease;
+	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; transition: font-size 0.3s ease, letter-spacing 0.3s ease;
 }
 
-navbar ul li a:hover {
+a:hover {
 	font-size: 1.75em;
+}
+
+#main-title:hover {
+	font-size: 1em;
+	letter-spacing: 3px;
 }
 
 #content {
 	display: inline-block;
 	text-align: center;
 	width: 75%;
+	height: 500px;
+	position: absolute;
+	line-height: 25px;
+}
+
+#projects {
+	line-height: 500px;
+}
+
+#about {
+	width: 75%;
+}
+
+#contact {
+
 }
 
 section {
 	display: inline-block;
 }
 
-#skills ul {
+ul {
 	display: inline-block;
 	text-align: center;
 	list-style: none;
@@ -80,8 +100,22 @@ i {
 	color: #F7CA18;
 }
 
+.project-img {
+	width: 200px;
+	height: 100px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
 
+.email {
+	font-size: 1.5em;
+}
 
+.social-buttons li {
+	display: inline-block;
+	font-size: 2.5em;
+	margin: 15px;
+}
 
 
 
