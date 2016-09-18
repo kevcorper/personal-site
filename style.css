@@ -1,5 +1,5 @@
 * {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: lighter;
 }
 
@@ -8,23 +8,92 @@ body {
 	color: gray;
 }
 
-#skills, #projects, #contact {
+#skills, #contact, #about {
 	display: none;
 }
 
-.banner {
-	background-color: gray;
-	margin: 0;
-	padding: 0;
-	height: 125px;
-	position: relative;
+.bold {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-.banner h1 {
+h1 {
+	font-size: 3em;
 	margin: 0;
-	padding: 0;
-	position: absolute;
-	bottom: 0;
-	font-size: 100px;
-	color: white;
+	display: inline-block;
+	margin-left: 10px;
 }
+
+.cap-letter {
+	font-size: 2.5em;
+	color: #F7CA18;
+}
+
+navbar {
+	display: inline-block;
+	width: 20%;
+	margin: 0;
+}
+
+navbar ul {
+	margin: 75px 25px;
+}
+
+navbar ul li {
+	list-style: none;
+	width: 150px;
+	padding: 15px;
+}
+
+navbar ul li:not(:last-child) {
+	border-bottom: 1px solid #F7CA18;
+}
+
+navbar ul li a {
+	color: gray;
+	text-decoration: none;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease; -moz-transition: font-size 0.3s ease, background-color 0.3s ease; -o-transition: font-size 0.3s ease, background-color 0.3s ease; -ms-transition: font-size 0.3s ease, background-color 0.3s ease; transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+navbar ul li a:hover {
+	font-size: 1.75em;
+}
+
+#content {
+	display: inline-block;
+	text-align: center;
+	width: 75%;
+}
+
+section {
+	display: inline-block;
+}
+
+#skills ul {
+	display: inline-block;
+	text-align: center;
+	list-style: none;
+	margin: 25px;
+}
+
+i {
+	color: #F7CA18;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	height: 25px;
+	background-color: #F7CA18;
+}
+
