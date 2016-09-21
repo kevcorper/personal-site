@@ -2,6 +2,16 @@
 	font-family: 'Raleway', sans-serif;
 	font-weight: lighter;
 	color: gray;
+	max-width: 1500px;
+	margin: auto;
+}
+
+html {
+	background-color: #fdfdfd;
+}
+
+#background {
+	border: 1px solid gray;
 }
 
 #main-title {
@@ -91,8 +101,9 @@ section {
 }
 
 .skill-title {
+	font-family: sans-serif;
+	font-size: 1.1em;
 	font-weight: bold;
-	text-decoration: underline;
 }
 
 #contact ul {
@@ -119,6 +130,7 @@ section {
 
 #about {
 	width: 70%;
+	font-size: 1.1em;
 }
 
 i {
@@ -137,6 +149,10 @@ a {
 
 a:hover {
 	font-size: 1.75em;
+}
+
+p {
+	margin: 15px;
 }
 
 footer {
