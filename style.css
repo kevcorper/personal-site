@@ -1,23 +1,10 @@
 * {
 	font-family: 'Raleway', sans-serif;
 	font-weight: lighter;
-}
-
-body {
-	margin: 0;
 	color: gray;
 }
 
-#projects, #skills, #contact {
-	display: none;
-}
-
-.bold {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-h1 {
+#main-title {
 	font-size: 3em;
 	margin: 0;
 	display: inline-block;
@@ -25,91 +12,92 @@ h1 {
 	width: 100%;
 }
 
+#main-title a:hover {
+	font-size: 1em;
+	letter-spacing: 3px;
+}
+
 .cap-letter {
 	font-size: 2.5em;
 	color: #F7CA18;
+	font-family: 'Raleway', sans-serif;
+}
+
+#nav-content {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin-top: 50px;
 }
 
 navbar {
 	display: inline-block;
 	width: 20%;
 	margin: 0;
+	text-align: center;
 }
 
 navbar ul {
-	margin: 75px 25px;
+	margin: 0 0 0 75px;
+	padding: 0;
 }
 
 navbar ul li {
 	list-style: none;
 	width: 150px;
 	padding: 15px;
+	font-size: 1.25em;
 }
 
 navbar ul li:not(:last-child) {
 	border-bottom: 1px solid #F7CA18;
 }
 
-a {
-	color: gray;
-	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; -ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; transition: font-size 0.3s ease, letter-spacing 0.3s ease;
-}
-
-a:hover {
-	font-size: 1.75em;
-}
-
 .showing {
 	font-size: 1.75em;
 }
 
-#main-title:hover {
-	font-size: 1em;
-	letter-spacing: 3px;
+#content:before {
+	content: ' ';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 
 #content {
 	display: inline-block;
 	text-align: center;
-	width: 75%;
-	height: 500px;
+	width: 80%;
+	height: 100%;
+	overflow: scroll;
 	position: absolute;
-	line-height: 25px;
-}
-
-#projects {
-	line-height: 500px;
-}
-
-#about {
-	width: 75%;
-}
-
-#contact {
-
+	vertical-align: middle;
 }
 
 section {
 	display: inline-block;
+	vertical-align: middle;
 }
 
-ul {
+#projects, #skills, #contact {
+	display: none;
+}
+
+#skills ul {
 	display: inline-block;
 	text-align: center;
 	list-style: none;
 	margin: 25px;
 }
 
-i {
-	color: #F7CA18;
+.skill-title {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-.project-img {
-	width: 200px;
-	height: 100px;
-	border: 1px solid gray;
-	border-radius: 5px;
+#contact ul {
+	margin: 0;
+	padding: 0;
 }
 
 .email {
@@ -122,14 +110,34 @@ i {
 	margin: 15px;
 }
 
+.project-img {
+	width: 200px;
+	height: 100px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
 
+#about {
+	width: 70%;
+}
 
+i {
+	color: #F7CA18;
+}
 
+a {
+	color: gray;
+	text-decoration: none;
+	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+}
 
-
-
-
-
+a:hover {
+	font-size: 1.75em;
+}
 
 footer {
 	height: 30px;
@@ -139,6 +147,6 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-
+	color: white;
 }
 
