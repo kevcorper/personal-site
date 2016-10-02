@@ -14,6 +14,32 @@ html {
 	border: 1px solid gray;
 }
 
+body {
+	margin: 0;
+}
+
+i {
+	color: #F7CA18;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
+	transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+a:hover {
+	font-size: 1.75em;
+}
+
+p {
+	margin: 10px;
+}
+
 #main-title {
 	font-size: 3em;
 	margin: 0;
@@ -34,7 +60,7 @@ html {
 }
 
 #nav-content {
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
 	width: 100%;
 	margin-top: 50px;
@@ -48,7 +74,7 @@ navbar {
 }
 
 navbar ul {
-	margin: 0 0 0 75px;
+	margin: 0 0 0 20%;
 	padding: 0;
 }
 
@@ -67,21 +93,13 @@ navbar ul li:not(:last-child) {
 	font-size: 1.75em;
 }
 
-#content:before {
-	content: ' ';
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
-}
-
 #content {
-	display: inline-block;
+	margin: 0;
+	display: inline;
 	text-align: center;
-	width: 80%;
 	height: 100%;
-	overflow: scroll;
+	width: 75%;
 	position: absolute;
-	vertical-align: middle;
 }
 
 section {
@@ -93,11 +111,15 @@ section {
 	display: none;
 }
 
+#projects, #contact {
+	margin-top: 75px;
+}
+
 #skills ul {
 	display: inline-block;
 	text-align: center;
 	list-style: none;
-	margin: 25px;
+	margin-top: 10px;
 }
 
 .skill-title {
@@ -126,33 +148,12 @@ section {
 	height: 100px;
 	border: 1px solid gray;
 	border-radius: 5px;
+	margin: 5px;
 }
 
 #about {
 	width: 70%;
 	font-size: 1.1em;
-}
-
-i {
-	color: #F7CA18;
-}
-
-a {
-	color: gray;
-	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	transition: font-size 0.3s ease, letter-spacing 0.3s ease;
-}
-
-a:hover {
-	font-size: 1.75em;
-}
-
-p {
-	margin: 15px;
 }
 
 footer {
