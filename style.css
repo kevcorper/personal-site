@@ -167,3 +167,14 @@ footer {
 	color: white;
 }
 
+@media screen and (max-width: 980px) {
+
+	#content {
+	width: 60%;
+	margin-left: 10%;
+	}
+
+	#projects {
+	margin-top: 0;
+	}
+}
