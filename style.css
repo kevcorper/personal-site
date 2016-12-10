@@ -25,15 +25,24 @@ i {
 a {
 	color: gray;
 	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease; 
-	transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
+	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
+	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
+	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
+	transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+*:not(a) {
+	-webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease; 
+	-moz-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	-o-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	-ms-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ; 
 }
 
 a:hover {
 	font-size: 1.75em;
+	cursor: pointer;
 }
 
 #projects a:hover {
@@ -90,7 +99,8 @@ navbar ul li {
 }
 
 navbar ul li:not(:last-child) {
-	border-bottom: 1px solid #F7CA18;
+	border-bottom: 1px solid;
+	border-color: #F7CA18;
 }
 
 .showing {
@@ -160,6 +170,30 @@ section {
 	font-size: 1.1em;
 }
 
+#color-change {
+	height:42px;
+	text-align: center;
+	line-height: 42px;
+	position: fixed;
+	bottom: 50px;
+	width: 100%;
+}
+
+#color-change a {
+	width: 42px;
+	display: inline-block;
+	border-radius: 20px;
+	background-color: #F7CA18;
+	height: 42px;
+	text-align: center;
+}
+
+#color-change i {
+	background-color: #F7CA18;
+	color: white;
+}
+
+
 footer {
 	height: 30px;
 	background-color: #F7CA18;
@@ -191,6 +225,11 @@ footer {
 	}
 	.social-buttons li {
 		font-size: 2.0em;
+	}
+
+	#color-change a {
+		float: left;
+		margin-left: 25px;
 	}
 }
 

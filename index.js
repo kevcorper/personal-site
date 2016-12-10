@@ -1,3 +1,12 @@
+function createColor() {
+    var letters = '0123456789ABCDE';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 15)];
+    }
+    return color;
+}
+
 $(function() {
 	$('.section').click(function(e) {
 		e.preventDefault();
@@ -16,5 +25,36 @@ $(function() {
 
 		var sectionId = '#' + target.text();
 		$(sectionId).delay(400).fadeIn(400);
+	});
+
+	$('#color-change a').click(function(e) {
+		e.preventDefault();
+		var target = $(e.target);
+
+		var oldColor = target.css('background-color');
+		var newColor = createColor();
+
+		$('#color-change').css('bottom', '-500px');
+
+		$('*').filter(function() {
+	    var match = oldColor;
+	    return ( $(this).css('background-color') == match );
+		}).css('background-color', newColor);
+
+		$('*').filter(function() {
+	    var match = oldColor;
+	    return ( $(this).css('color') == match );
+		}).css('color', newColor);
+
+		$('*').filter(function() {
+	    var match = oldColor;
+	    return ( $(this).css('border-color') == match );
+		}).css('border-color', newColor);
+
+		$('#color-change').delay(300)
+		.queue(function (next) { 
+		  $(this).css('bottom', '50px'); 
+		  next(); 
+		});
 	});
 });
