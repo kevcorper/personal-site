@@ -15,6 +15,7 @@ html {
 body {
 	margin: 0;
 	max-width: 1500px;
+	min-width: 600px;
 	margin: auto;
 }
 
@@ -22,14 +23,23 @@ i {
 	color: #F7CA18;
 }
 
+.rotate {
+	display: inline-block;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+}
+
 a {
 	color: gray;
 	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
 }
 
 *:not(a) {
@@ -61,9 +71,13 @@ p {
 	width: 100%;
 }
 
-#main-title a:hover {
+#main-title:hover a {
 	font-size: 1em;
 	letter-spacing: 3px;
+}
+
+#main-title:hover .rotate {
+	transform: rotate(40deg);
 }
 
 .cap-letter {
