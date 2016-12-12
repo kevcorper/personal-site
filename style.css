@@ -170,7 +170,7 @@ section {
 	font-size: 1.1em;
 }
 
-#color-change {
+#features {
 	height:42px;
 	text-align: center;
 	line-height: 42px;
@@ -179,7 +179,11 @@ section {
 	width: 100%;
 }
 
-#color-change a {
+#features div {
+	display: inline-block;
+}
+
+#features a {
 	width: 42px;
 	display: inline-block;
 	border-radius: 20px;
@@ -188,7 +192,7 @@ section {
 	text-align: center;
 }
 
-#color-change i {
+#features i {
 	background-color: #F7CA18;
 	color: white;
 }
@@ -227,7 +231,7 @@ footer {
 		font-size: 2.0em;
 	}
 
-	#color-change a {
+	#features div {
 		float: left;
 		margin-left: 25px;
 	}
