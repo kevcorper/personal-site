@@ -8,10 +8,6 @@ html {
 	background-color: #fdfdfd;
 }
 
-#background {
-	border: 1px solid gray;
-}
-
 body {
 	margin: 0;
 	max-width: 1500px;
@@ -48,6 +44,11 @@ i {
 	-o-transition: all 0.5s ease; 
 	-ms-transition: all 0.5s ease; 
 	transition: all 0.5s ease;
+}
+
+.flash {
+	background-color: #fdfdfd;
+	color: #fdfdfd;
 }
 
 a:hover {
@@ -211,6 +212,7 @@ section {
 #features i {
 	background-color: #F7CA18;
 	color: white;
+	z-index: 99999;
 }
 
 

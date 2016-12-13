@@ -2,7 +2,7 @@ function createColor() {
     var letters = '0123456789ABCDE';
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 15)];
+      color += letters[Math.floor(Math.random() * 15)];
     }
     return color;
 }
@@ -88,5 +88,19 @@ $(function() {
 	    var match = oldColor;
 	    return ( $(this).css('border-color') == match );
 		}).css('border-color', newColor);
+	});
+
+	$('#bomb a').click(function(e) {
+		e.preventDefault();
+
+		$("*").addClass("flash").delay(500).queue(function(next){
+	    $(this).removeClass("flash");
+	    var elements = $('*:not(html, body, header, #flash, #nav-content, #features, #features a, #features div, #features i)').toArray();
+
+	    for (var i = 0; i < elements.length; i++ ) {
+	      var rule = 'rotate(' + Math.floor(Math.random() * 360) + 'deg)';
+	      $(elements[i]).css('transform', rule);
+	    }
+		});
 	});
 });
