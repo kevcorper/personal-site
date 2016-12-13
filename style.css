@@ -15,7 +15,7 @@ html {
 body {
 	margin: 0;
 	max-width: 1500px;
-	min-width: 600px;
+	min-width: 300px;
 	margin: auto;
 }
 
@@ -23,16 +23,7 @@ i {
 	color: #F7CA18;
 }
 
-.rotate {
-	display: inline-block;
-	-webkit-transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
-	-ms-transition: all 0.5s ease; 
-	transition: all 0.5s ease;
-}
-
-a {
+* {
 	color: gray;
 	text-decoration: none;
 	-webkit-transition: all 0.5s ease; 
@@ -48,6 +39,15 @@ a {
 	-o-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
 	-ms-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
 	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ; 
+}
+
+.rotate {
+	display: inline-block;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
 }
 
 a:hover {
@@ -195,6 +195,7 @@ section {
 
 #features div {
 	display: inline-block;
+	margin: 0 15px;
 }
 
 #features a {
@@ -247,10 +248,83 @@ footer {
 
 	#features div {
 		float: left;
-		margin-left: 25px;
+		margin: 0 0 0 35px;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	#main-title {
+    font-size: 2em;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+	}
 
+	navbar {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+	}
+
+	navbar ul {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+	}
+
+	navbar ul li:not(:last-child) {
+		border-bottom: none;
+    border-right: 1px solid;
+    border-color: #F7CA18;
+	}
+
+	navbar ul li {
+    list-style: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    display: inline;
+	}
+
+	#content {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-top: 7%;
+  }
+
+	#features div {
+    float: none;
+    margin: 0 12.5px;
+	}
+
+	#skills ul {
+    padding: 0;
+    margin: 15px;
+	}
+
+	#projects {
+    margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	#main-title {
+    font-size: 1.4em;
+	}
+
+	navbar ul li {
+    font-size: 0.6em;
+	}
+
+	#contact .fa {
+    font-size: 25px;
+	}
+
+	#features div {
+    margin-right: 25px;
+	}
 }
