@@ -8,10 +8,6 @@ html {
 	background-color: #fdfdfd;
 }
 
-#background {
-	border: 1px solid gray;
-}
-
 body {
 	margin: 0;
 	max-width: 1500px;
@@ -48,6 +44,11 @@ i {
 	-o-transition: all 0.5s ease; 
 	-ms-transition: all 0.5s ease; 
 	transition: all 0.5s ease;
+}
+
+.flash {
+	background-color: #fdfdfd;
+	color: #fdfdfd;
 }
 
 a:hover {
@@ -191,6 +192,7 @@ section {
 	position: fixed;
 	bottom: 50px;
 	width: 100%;
+	min-width: 300px;
 }
 
 #features div {
@@ -210,6 +212,7 @@ section {
 #features i {
 	background-color: #F7CA18;
 	color: white;
+	z-index: 99999;
 }
 
 
@@ -304,10 +307,11 @@ footer {
 	#skills ul {
     padding: 0;
     margin: 15px;
+    width: 130px;
 	}
 
 	#projects {
-    margin-top: 25px;
+    margin-top: 2%;
 	}
 }
 
@@ -324,7 +328,12 @@ footer {
     font-size: 25px;
 	}
 
-	#features div {
-    margin-right: 25px;
+	#skills ul {
+    width: auto;
+	}
+
+	#about {
+		font-size: 0.8em;
+		margin-top: 7%;
 	}
 }
