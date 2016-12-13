@@ -191,6 +191,7 @@ section {
 	position: fixed;
 	bottom: 50px;
 	width: 100%;
+	min-width: 300px;
 }
 
 #features div {
@@ -304,10 +305,11 @@ footer {
 	#skills ul {
     padding: 0;
     margin: 15px;
+    width: 130px;
 	}
 
 	#projects {
-    margin-top: 25px;
+    margin-top: 2%;
 	}
 }
 
@@ -324,7 +326,12 @@ footer {
     font-size: 25px;
 	}
 
-	#features div {
-    margin-right: 25px;
+	#skills ul {
+    width: auto;
+	}
+
+	#about {
+		font-size: 0.8em;
+		margin-top: 7%;
 	}
 }
