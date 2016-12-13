@@ -15,6 +15,7 @@ html {
 body {
 	margin: 0;
 	max-width: 1500px;
+	min-width: 300px;
 	margin: auto;
 }
 
@@ -22,14 +23,14 @@ i {
 	color: #F7CA18;
 }
 
-a {
+* {
 	color: gray;
 	text-decoration: none;
-	-webkit-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-moz-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-o-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	-ms-transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; 
-	transition: font-size 0.3s ease, letter-spacing 0.3s ease, color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
 }
 
 *:not(a) {
@@ -38,6 +39,15 @@ a {
 	-o-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
 	-ms-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
 	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ; 
+}
+
+.rotate {
+	display: inline-block;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
 }
 
 a:hover {
@@ -61,9 +71,13 @@ p {
 	width: 100%;
 }
 
-#main-title a:hover {
+#main-title:hover a {
 	font-size: 1em;
 	letter-spacing: 3px;
+}
+
+#main-title:hover .rotate {
+	transform: rotate(40deg);
 }
 
 .cap-letter {
@@ -170,7 +184,7 @@ section {
 	font-size: 1.1em;
 }
 
-#color-change {
+#features {
 	height:42px;
 	text-align: center;
 	line-height: 42px;
@@ -179,7 +193,12 @@ section {
 	width: 100%;
 }
 
-#color-change a {
+#features div {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+#features a {
 	width: 42px;
 	display: inline-block;
 	border-radius: 20px;
@@ -188,7 +207,7 @@ section {
 	text-align: center;
 }
 
-#color-change i {
+#features i {
 	background-color: #F7CA18;
 	color: white;
 }
@@ -227,12 +246,85 @@ footer {
 		font-size: 2.0em;
 	}
 
-	#color-change a {
+	#features div {
 		float: left;
-		margin-left: 25px;
+		margin: 0 0 0 35px;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	#main-title {
+    font-size: 2em;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+	}
 
+	navbar {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+	}
+
+	navbar ul {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+	}
+
+	navbar ul li:not(:last-child) {
+		border-bottom: none;
+    border-right: 1px solid;
+    border-color: #F7CA18;
+	}
+
+	navbar ul li {
+    list-style: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    display: inline;
+	}
+
+	#content {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-top: 7%;
+  }
+
+	#features div {
+    float: none;
+    margin: 0 12.5px;
+	}
+
+	#skills ul {
+    padding: 0;
+    margin: 15px;
+	}
+
+	#projects {
+    margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	#main-title {
+    font-size: 1.4em;
+	}
+
+	navbar ul li {
+    font-size: 0.6em;
+	}
+
+	#contact .fa {
+    font-size: 25px;
+	}
+
+	#features div {
+    margin-right: 25px;
+	}
 }
