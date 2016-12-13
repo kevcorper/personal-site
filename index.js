@@ -93,7 +93,7 @@ $(function() {
 	$('#bomb a').click(function(e) {
 		e.preventDefault();
 
-		$("*").addClass("flash").delay(500).queue(function(next){
+		$("*").addClass("flash").delay(800).queue(function(next){
 	    $(this).removeClass("flash");
 	    var elements = $('*:not(html, body, header, #flash, #nav-content, #features, #features a, #features div, #features i)').toArray();
 

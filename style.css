@@ -47,8 +47,9 @@ i {
 }
 
 .flash {
-	background-color: #fdfdfd;
-	color: #fdfdfd;
+	background-color: #fdfdfd !important;
+	color: #fdfdfd !important;
+	border-color: #fdfdfd !important;
 }
 
 a:hover {
