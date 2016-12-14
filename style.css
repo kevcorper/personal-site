@@ -196,9 +196,16 @@ section {
 	min-width: 300px;
 }
 
-#features div {
+#feature-buttons {
+	height:50px;
+	width: 225px;
+	margin: auto;
+}
+
+#features div div {
 	display: inline-block;
 	margin: 0 15px;
+	float: left;
 }
 
 #features a {
@@ -250,9 +257,9 @@ footer {
 		font-size: 2.0em;
 	}
 
-	#features div {
+	#feature-buttons {
 		float: left;
-		margin: 0 0 0 35px;
+		margin: 0 0 0 2%;
 	}
 }
 
@@ -300,9 +307,10 @@ footer {
     margin-top: 7%;
   }
 
-	#features div {
-    float: none;
-    margin: 0 12.5px;
+
+	#feature-buttons {
+		float: none;
+		margin: auto;
 	}
 
 	#skills ul {
