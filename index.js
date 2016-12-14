@@ -28,38 +28,7 @@ $(function() {
 	});
 
 	$('#features div').click(function(e) {
-		e.preventDefault();
-		var target = $(e.target);
-
 		$('#features').css('bottom', '-500px');
-
-		if (target.attr('id') === 'color-change') {
-				e.preventDefault();
-				var target = $(e.target);
-
-				var oldColor = target.css('background-color');
-				var newColor = createColor();
-
-				$('*').filter(function() {
-			    var match = oldColor;
-			    return ( $(this).css('background-color') == match );
-				}).css('background-color', newColor);
-
-				$('*').filter(function() {
-			    var match = oldColor;
-			    return ( $(this).css('color') == match );
-				}).css('color', newColor);
-
-				$('*').filter(function() {
-			    var match = oldColor;
-			    return ( $(this).css('border-color') == match );
-				}).css('border-color', newColor);
-		} else if (target.attr('id') === 'reverse') {
-			return
-		} else if (target.attr('id') === 'reverse') {
-			return
-		}
-
 		$('#features').delay(300)
 		.queue(function (next) { 
 		  $(this).css('bottom', '50px'); 
