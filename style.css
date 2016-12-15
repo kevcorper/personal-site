@@ -47,8 +47,9 @@ i {
 }
 
 .flash {
-	background-color: #fdfdfd;
-	color: #fdfdfd;
+	background-color: #fdfdfd !important;
+	color: #fdfdfd !important;
+	border-color: #fdfdfd !important;
 }
 
 a:hover {
@@ -69,7 +70,6 @@ p {
 	margin: 0;
 	display: inline-block;
 	margin-left: 10px;
-	width: 100%;
 }
 
 #main-title:hover a {
@@ -85,6 +85,16 @@ p {
 	font-size: 2.5em;
 	color: #F7CA18;
 	font-family: 'Raleway', sans-serif;
+}
+
+#moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #F7CA18;
+  display: inline-block;
+  margin: 30px 50px 0 0;
+  float: right;
 }
 
 #nav-content {
@@ -195,9 +205,16 @@ section {
 	min-width: 300px;
 }
 
-#features div {
+#feature-buttons {
+	height:50px;
+	width: 225px;
+	margin: auto;
+}
+
+#features div div {
 	display: inline-block;
 	margin: 0 15px;
+	float: left;
 }
 
 #features a {
@@ -249,9 +266,9 @@ footer {
 		font-size: 2.0em;
 	}
 
-	#features div {
+	#feature-buttons {
 		float: left;
-		margin: 0 0 0 35px;
+		margin: 0 0 0 2%;
 	}
 }
 
@@ -299,9 +316,10 @@ footer {
     margin-top: 7%;
   }
 
-	#features div {
-    float: none;
-    margin: 0 12.5px;
+
+	#feature-buttons {
+		float: none;
+		margin: auto;
 	}
 
 	#skills ul {
