@@ -57,6 +57,11 @@ $(function() {
 	    var match = oldColor;
 	    return ( $(this).css('border-color') == match );
 		}).css('border-color', newColor);
+
+		$('*').filter(function() {
+	    var match = oldColor;
+	    return ( $(this).css('fill') == match );
+		}).css('fill', newColor);
 	});
 
 	$('#bomb a').click(function(e) {
