@@ -70,7 +70,6 @@ p {
 	margin: 0;
 	display: inline-block;
 	margin-left: 10px;
-	width: 100%;
 }
 
 #main-title:hover a {
@@ -86,6 +85,16 @@ p {
 	font-size: 2.5em;
 	color: #F7CA18;
 	font-family: 'Raleway', sans-serif;
+}
+
+#moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #F7CA18;
+  display: inline-block;
+  margin: 30px 50px 0 0;
+  float: right;
 }
 
 #nav-content {
