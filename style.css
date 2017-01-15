@@ -4,15 +4,19 @@
 	color: gray;
 }
 
-html {
-	background-color: #fdfdfd;
-}
-
 body {
 	margin: 0;
 	max-width: 1500px;
 	min-width: 300px;
 	margin: auto;
+}
+
+#sky {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -999;
+  background-color: #fdfdfd;
 }
 
 i {
@@ -30,11 +34,11 @@ i {
 }
 
 *:not(a) {
-	-webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease; 
-	-moz-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
-	-o-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
-	-ms-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
-	transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ; 
+	-webkit-transition: color 0.5s ease, fill 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease; 
+	-moz-transition: color 0.5s ease, fill 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	-o-transition: color 0.5s ease, fill 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	-ms-transition: color 0.5s ease, fill 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ;  
+	transition: color 0.5s ease, fill 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, bottom 0.5s ease ; 
 }
 
 .rotate {
@@ -46,14 +50,8 @@ i {
 	transition: all 0.5s ease;
 }
 
-.flash {
-	background-color: #fdfdfd !important;
-	color: #fdfdfd !important;
-	border-color: #fdfdfd !important;
-}
-
 a:hover {
-	font-size: 1.75em;
+	font-size: 1.70em;
 	cursor: pointer;
 }
 
@@ -88,13 +86,16 @@ p {
 }
 
 #moon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  box-shadow: 15px 15px 0 0 #F7CA18;
-  display: inline-block;
-  margin: 30px 50px 0 0;
-  float: right;
+  position: absolute;
+  right: -75px;
+  top: 40px;
+	transform: rotate(40deg);	
+	z-index: -1;
+	display: none;
+}
+
+.moon-circle {
+	fill: #F7CA18;
 }
 
 #nav-content {
@@ -174,6 +175,7 @@ section {
 
 .email {
 	font-size: 1.5em;
+	height: 50px;
 }
 
 .social-buttons li {
@@ -218,20 +220,19 @@ section {
 }
 
 #features a {
-	width: 42px;
+	width: 44px;
 	display: inline-block;
-	border-radius: 20px;
+	border-radius: 22px;
 	background-color: #F7CA18;
-	height: 42px;
+	height: 44px;
 	text-align: center;
 }
-
+ 
 #features i {
 	background-color: #F7CA18;
 	color: white;
-	z-index: 99999;
+	z-index: 999;
 }
-
 
 footer {
 	height: 30px;
@@ -265,7 +266,6 @@ footer {
 	.social-buttons li {
 		font-size: 2.0em;
 	}
-
 	#feature-buttons {
 		float: left;
 		margin: 0 0 0 2%;
@@ -280,27 +280,23 @@ footer {
     width: 100%;
     text-align: center;
 	}
-
 	navbar {
     display: block;
     margin: 0;
     text-align: center;
     width: 100%;
 	}
-
 	navbar ul {
     margin: 0;
     width: 100%;
     padding: 0;
     text-align: center;
 	}
-
 	navbar ul li:not(:last-child) {
 		border-bottom: none;
     border-right: 1px solid;
     border-color: #F7CA18;
 	}
-
 	navbar ul li {
     list-style: none;
     width: 100%;
@@ -308,26 +304,21 @@ footer {
     font-size: 1em;
     display: inline;
 	}
-
 	#content {
     width: 100%;
     margin: 0;
     height: auto;
     margin-top: 7%;
   }
-
-
 	#feature-buttons {
 		float: none;
 		margin: auto;
 	}
-
 	#skills ul {
     padding: 0;
     margin: 15px;
     width: 130px;
 	}
-
 	#projects {
     margin-top: 2%;
 	}
@@ -337,19 +328,15 @@ footer {
 	#main-title {
     font-size: 1.4em;
 	}
-
 	navbar ul li {
     font-size: 0.6em;
 	}
-
 	#contact .fa {
     font-size: 25px;
 	}
-
 	#skills ul {
     width: auto;
 	}
-
 	#about {
 		font-size: 0.8em;
 		margin-top: 7%;
