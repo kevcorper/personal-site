@@ -4,15 +4,19 @@
 	color: gray;
 }
 
-html {
-	background-color: #fdfdfd;
-}
-
 body {
 	margin: 0;
 	max-width: 1500px;
 	min-width: 300px;
 	margin: auto;
+}
+
+#sky {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -999;
+  background-color: #fdfdfd;
 }
 
 i {
@@ -44,12 +48,6 @@ i {
 	-o-transition: all 0.5s ease; 
 	-ms-transition: all 0.5s ease; 
 	transition: all 0.5s ease;
-}
-
-.flash {
-	background-color: #fdfdfd !important;
-	color: #fdfdfd !important;
-	border-color: #fdfdfd !important;
 }
 
 a:hover {
@@ -92,7 +90,7 @@ p {
   right: -75px;
   top: 40px;
 	transform: rotate(40deg);	
-	z-index: -1000;
+	z-index: -1;
 	display: none;
 }
 
@@ -229,21 +227,12 @@ section {
 	height: 44px;
 	text-align: center;
 }
-
+ 
 #features i {
 	background-color: #F7CA18;
 	color: white;
-	z-index: 99999;
+	z-index: 999;
 }
-
-.moon-rotate {
-	-webkit-transform: rotate(405deg) !important;  /* Chrome, Safari 3.1+ */
-	-moz-transform: rotate(405deg) !important;  /* Firefox 3.5-15 */
-	-ms-transform: rotate(405deg) !important;  /* IE 9 */
-	-o-transform: rotate(405deg) !important;  /* Opera 10.50-12.00 */
-	transform: rotate(405deg) !important;  /* Firefox 16+, IE 10+, Opera 12.10+ */
-}
-
 
 footer {
 	height: 30px;
@@ -277,7 +266,6 @@ footer {
 	.social-buttons li {
 		font-size: 2.0em;
 	}
-
 	#feature-buttons {
 		float: left;
 		margin: 0 0 0 2%;
@@ -292,27 +280,23 @@ footer {
     width: 100%;
     text-align: center;
 	}
-
 	navbar {
     display: block;
     margin: 0;
     text-align: center;
     width: 100%;
 	}
-
 	navbar ul {
     margin: 0;
     width: 100%;
     padding: 0;
     text-align: center;
 	}
-
 	navbar ul li:not(:last-child) {
 		border-bottom: none;
     border-right: 1px solid;
     border-color: #F7CA18;
 	}
-
 	navbar ul li {
     list-style: none;
     width: 100%;
@@ -320,26 +304,21 @@ footer {
     font-size: 1em;
     display: inline;
 	}
-
 	#content {
     width: 100%;
     margin: 0;
     height: auto;
     margin-top: 7%;
   }
-
-
 	#feature-buttons {
 		float: none;
 		margin: auto;
 	}
-
 	#skills ul {
     padding: 0;
     margin: 15px;
     width: 130px;
 	}
-
 	#projects {
     margin-top: 2%;
 	}
@@ -349,19 +328,15 @@ footer {
 	#main-title {
     font-size: 1.4em;
 	}
-
 	navbar ul li {
     font-size: 0.6em;
 	}
-
 	#contact .fa {
     font-size: 25px;
 	}
-
 	#skills ul {
     width: auto;
 	}
-
 	#about {
 		font-size: 0.8em;
 		margin-top: 7%;
