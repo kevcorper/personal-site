@@ -69,12 +69,26 @@ $(function() {
 
 		$("*").addClass("flash").delay(800).queue(function(next){
 	    $(this).removeClass("flash");
-	    var elements = $('*:not(html, body, header, #flash, #nav-content, #features, #features a, #features div, #features i)').toArray();
+	    var elements = $('*:not(html, body, header, #flash, #nav-content, #features, #features a, #features div, #features i, #moon circle)').toArray();
 
 	    for (var i = 0; i < elements.length; i++ ) {
 	      var rule = 'rotate(' + Math.floor(Math.random() * 360) + 'deg)';
 	      $(elements[i]).css('transform', rule);
 	    }
 		});
+	});
+
+	var degrees = 45;
+
+	$('#night a').click(function(e) {
+		e.preventDefault();
+
+		degrees+=360;
+
+		$('#moon').fadeIn(800).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+	     '-moz-transform' : 'rotate('+ degrees +'deg)',
+	     '-ms-transform' : 'rotate('+ degrees +'deg)',
+	     'transform' : 'rotate('+ degrees +'deg)'
+	   });
 	});
 });

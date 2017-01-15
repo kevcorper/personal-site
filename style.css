@@ -92,6 +92,8 @@ p {
   right: -75px;
   top: 40px;
 	transform: rotate(40deg);	
+	z-index: -1000;
+	display: none;
 }
 
 .moon-circle {
@@ -175,6 +177,7 @@ section {
 
 .email {
 	font-size: 1.5em;
+	height: 50px;
 }
 
 .social-buttons li {
@@ -231,6 +234,14 @@ section {
 	background-color: #F7CA18;
 	color: white;
 	z-index: 99999;
+}
+
+.moon-rotate {
+	-webkit-transform: rotate(405deg) !important;  /* Chrome, Safari 3.1+ */
+	-moz-transform: rotate(405deg) !important;  /* Firefox 3.5-15 */
+	-ms-transform: rotate(405deg) !important;  /* IE 9 */
+	-o-transform: rotate(405deg) !important;  /* Opera 10.50-12.00 */
+	transform: rotate(405deg) !important;  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 
